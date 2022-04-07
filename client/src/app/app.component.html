@@ -2,4 +2,21 @@
 <ul>
     <li *ngFor='let user of users'>{{user.id}} - {{user.userName}}</li>
 </ul>
-
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let user of users'>
+                <td>{{user.id}}</td>
+                <td>{{user.userName}}</td>
+                
+            </tr>
+        </tbody>
+        </table>
+        
+</div>
